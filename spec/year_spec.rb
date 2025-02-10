@@ -8,7 +8,7 @@ RSpec.describe Year, "#is_leap_year" do
   context "Argument tests" do
       
     it "number arg does not raise error" do
-      expect(year.is_leap_year(2000)).to eq(nil)
+      expect(year.is_leap_year(2000)).to eq(true)
     end
 
     it "non number raises TypeError" do

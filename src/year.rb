@@ -6,5 +6,16 @@ class Year
         # This function would return true if year is leap year else false.
 
         raise TypeError, 'arg year be number' unless year.is_a? Integer
+
+        if year % 4 == 0
+            if year % 100 == 0
+                if year % 400 == 0
+                    return true
+                end
+                return false
+            end
+            return true
+        end
+        return false
     end
 end
